@@ -22,21 +22,21 @@ SmartScaffold is a comprehensive development environment that empowers developer
    Navigate to the project directory:
  ```bash
 cd SmartScaffold
-
+```
 Install dependencies:
-bash
+```bash
 npm install
-
+```
 Usage
 To start the development server:
-bash
+```bash
 npm start
-
+```
 Contributing
 Contributions are welcome! Please open an issue or submit a pull request.
 License
 This project is licensed under the MIT License.
-text
+
 
 ### Instructions to Create the README.md File
 
