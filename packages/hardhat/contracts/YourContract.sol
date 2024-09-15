@@ -28,6 +28,18 @@ contract YourContract {
 		uint256 value
 	);
 
+	// Mapping from address to number
+mapping(address => uint) public userNumbers;
+
+// Event to emit when a number is updated
+event NumberUpdated(address indexed user, uint number);
+
+// Function to store a number
+function storeNumber(uint _number) public {
+    userNumbers[msg.sender] = _number;
+    emit NumberUpdated(msg.sender, _number);
+}
+
 	// Constructor: Called once on contract deployment
 	// Check packages/hardhat/deploy/00_deploy_your_contract.ts
 	constructor(address _owner) {
